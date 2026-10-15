@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDN KEBOTOHAN</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="logo">
+      <span class="logo-badge">SD</span>
+    </div>
+    <div class="hero-text">
+      <h1>SDN KEBOTOHAN</h1>
+      <p class="subtitle">Sekolah Dasar Negeri Kebotohan · Unggul, Berkarakter, Berwawasan Lingkungan</p>
+      <div class="hero-meta">
+        <span>Jl. Kebotohan No. 1</span>
+        <span class="dot">•</span>
+        <span>Telp. (031) 123-456</span>
+        <span class="dot">•</span>
+        <span>email@sdnkebotohan.sch.id</span>
+      </div>
+    </div>
+  </div>
+  <nav class="nav">
+    <a href="#berita">Berita</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#pengumuman">Pengumuman</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#profil">Profil</a>
+    <a href="#admin" class="nav-admin">Admin</a>
+  </nav>
+</header>
+
+<main>
+  <section class="container">
+    <div class="card welcome">
+      <h2>Selamat Datang di Website SDN Kebotohan</h2>
+      <p>Portal resmi informasi pendidikan, kegiatan sekolah, dan pengumuman terkini bagi seluruh warga sekolah.</p>
+    </div>
+
+    <div class="grid-2">
+      <section id="berita" class="card">
+        <div class="card-head">
+          <h2>Berita Terbaru</h2>
+          <span class="card-tag">Update Otomatis</span>
+        </div>
+        <ul id="berita-list" class="list"></ul>
+      </section>
+
+      <section id="pengumuman" class="card">
+        <div class="card-head">
+          <h2>Pengumuman</h2>
+          <span class="card-tag highlight">Penting</span>
+        </div>
+        <ul id="pengumuman-list" class="list"></ul>
+      </section>
+    </div>
+
+    <section id="kegiatan" class="card">
+      <div class="card-head">
+        <h2>Kegiatan Sekolah</h2>
+        </div>
+      <div id="kegiatan-grid" class="grid-3"></div>
+    </section>
+
+    <section id="galeri" class="card">
+      <div class="card-head"><h2>Galeri</h2></div>
+      <div id="galeri-grid" class="grid-4"></div>
+    </section>
+
+    <section id="profil" class="card">
+      <div class="card-head"><h2>Profil Sekolah</h2></div>
+      <div class="profile-grid">
+        <div>
+          <h3>Visi</h3>
+          <p>"Terwujudnya Sekolah Dasar yang Berkualitas, Berkarakter, dan Berwawasan Nasional."</p>
+        </div>
+        <div>
+          <h3>Misi</h3>
+          <p>Menyelenggarkan pendidikan dasar yang terjangkau, bermutu, dan merata.</p>
+        </div>
+        <div>
+          <h3>Statistik</h3>
+          <ul>
+            <li>Siswa: 420</li>
+            <li>Guru: 28</li>
+            <li>Tenaga Kependidikan: 12</li>
+            <li>Rombel: 12</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 SDN KEBOTOHAN · Dikelola oleh Tim IT Sekolah</p>
+</footer>
+
+<!-- Admin Panel -->
+<div id="admin-panel" class="admin-panel hidden">
+  <div class="admin-backdrop" onclick="closeAdmin()"></div>
+  <div class="admin-box">
+    <div class="admin-head">
+      <h2>Panel Admin</h2>
+      <div style="display:flex;gap:12px;align-items:center">
+        <button id="logout-btn" onclick="logoutAdmin()" style="display:none;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:#fff;padding:6px 12px;border-radius:7px;font-size:12px;cursor:pointer">Keluar</button>
+        <button class="close-btn" onclick="closeAdmin()">×</button>
+      </div>
+    </div>
+    <div class="admin-tabs">
+      <button class="tab-active" data-tab="berita">Berita</button>
+      <button data-tab="kegiatan">Kegiatan</button>
+      <button data-tab="pengumuman">Pengumuman</button>
+      <button data-tab="galeri">Galeri</button>
+      <button data-tab="backup">Backup</button>
+    </div>
+    <div class="admin-content" id="admin-content"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
