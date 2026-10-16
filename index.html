@@ -1,128 +1,934 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SDN KEBOTOHAN</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">SDN Kebotohan - Unggul, Berkarakter & Berprestasi</title>
+  <meta name="description" content="Website Resmi SDN Kebotohan. Pusat informasi sekolah, profil, berita, kegiatan, dan pengumuman.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-inner">
-    <div class="logo">
-      <span class="logo-badge">SD</span>
+  <!-- TOP BAR -->
+  <aside class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span class="info-item">
+          <svg viewBox="0 0 24 24" class="ico"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span id="tb-alamat">Desa Kebotohan, Kec. Kraton, Kab. Pasuruan</span>
+        </span>
+        <span class="info-item">
+          <svg viewBox="0 0 24 24" class="ico"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span id="tb-telp">(0343) 421xxx</span>
+        </span>
+      </div>
+      <div class="topbar-right">
+        <span class="info-item">
+          <svg viewBox="0 0 24 24" class="ico"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span id="tb-email">info@sdnkebotohan.sch.id</span>
+        </span>
+        <span class="badge-npsn">NPSN: <span id="tb-npsn">20519123</span></span>
+      </div>
     </div>
-    <div class="hero-text">
-      <h1>SDN KEBOTOHAN</h1>
-      <p class="subtitle">Sekolah Dasar Negeri Kebotohan · Unggul, Berkarakter, Berwawasan Lingkungan</p>
-      <div class="hero-meta">
-        <span>Jl. Kebotohan No. 1</span>
-        <span class="dot">•</span>
-        <span>Telp. (031) 123-456</span>
-        <span class="dot">•</span>
-        <span>email@sdnkebotohan.sch.id</span>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#beranda" class="brand">
+        <div class="brand-logo-wrap" id="brand-logo-wrap">
+          <img id="brand-logo" src="" alt="Logo SDN Kebotohan" class="brand-logo hidden">
+          <div class="logo-fallback" id="brand-logo-fallback">SD</div>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-name" id="brand-name">SDN KEBOTOHAN</h1>
+          <p class="brand-tagline" id="brand-tagline">Unggul, Berkarakter &amp; Berprestasi</p>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#profil" class="nav-link">Profil</a>
+        <a href="#berita" class="nav-link">Berita</a>
+        <a href="#kegiatan" class="nav-link">Kegiatan</a>
+        <a href="#pengumuman" class="nav-link">Pengumuman</a>
+        <a href="#galeri" class="nav-link">Galeri</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-sm" id="btn-open-admin">
+          <svg viewBox="0 0 24 24" class="ico"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          <span>Panel Admin</span>
+        </button>
+        <button class="burger-btn" id="burger-btn" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="beranda" class="hero">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-chip">Portal Resmi Sekolah Dasar</span>
+          <h2 class="hero-title" id="hero-title">Mewujudkan Generasi Cerdas, Kreatif &amp; Berakhlak Mulia</h2>
+          <p class="hero-desc" id="hero-desc">Selamat datang di situs resmi SDN Kebotohan. Wadah transparansi informasi akademik, kegiatan siswa, prestasi, dan perkembangan sekolah untuk seluruh civitas akademika dan masyarakat.</p>
+          <div class="hero-cta">
+            <a href="#berita" class="btn btn-light">Baca Berita Terbaru</a>
+            <a href="#profil" class="btn btn-outline-white">Profil Sekolah</a>
+          </div>
+        </div>
+
+        <div class="hero-card-side">
+          <div class="headmaster-card">
+            <div class="headmaster-avatar-wrap">
+              <img id="ks-foto" src="" alt="Kepala Sekolah" class="headmaster-img hidden">
+              <div class="headmaster-fallback" id="ks-foto-fallback">
+                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+              </div>
+            </div>
+            <div class="headmaster-info">
+              <span class="label-ks">Kepala Sekolah</span>
+              <h4 id="ks-nama">Nama Kepala Sekolah, S.Pd.</h4>
+              <p class="ks-sambut" id="ks-sambutan">"Pendidikan adalah lentera masa depan. Kami berkomitmen memberikan bimbingan terbaik untuk setiap siswa."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS STRIP -->
+      <div class="container">
+        <div class="stats-grid" id="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number" id="stat-siswa">240+</div>
+            <div class="stat-label">Siswa Aktif</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" id="stat-guru">18</div>
+            <div class="stat-label">Guru &amp; Staf</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" id="stat-rombel">12</div>
+            <div class="stat-label">Rombongan Belajar</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" id="stat-akreditasi">A</div>
+            <div class="stat-label">Akreditasi Unggul</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL SECTION -->
+    <section id="profil" class="sec">
+      <div class="container">
+        <div class="sec-header text-center">
+          <span class="sec-badge">Profil Lembaga</span>
+          <h2 class="sec-title">Mengenal Lebih Dekat SDN Kebotohan</h2>
+          <p class="sec-subtitle">Dedikasi kami dalam menghadirkan ekosistem belajar yang ramah anak, berprestasi, dan berlandaskan budi pekerti luhur.</p>
+        </div>
+
+        <div class="grid-2 gap-xl">
+          <div class="card card-elevated">
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </div>
+              <h3 class="card-title">Visi Sekolah</h3>
+            </div>
+            <p class="lead-text" id="profil-visi">"Terwujudnya peserta didik yang religius, berprestasi, berwawasan lingkungan, mandiri, dan berbudaya luhur."</p>
+          </div>
+
+          <div class="card card-elevated">
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              </div>
+              <h3 class="card-title">Misi Sekolah</h3>
+            </div>
+            <ul class="misi-list" id="profil-misi-list">
+              <!-- Rendered via JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Identitas Detail Card -->
+        <div class="card card-elevated mt-lg">
+          <h3 class="card-title mb-md">Identitas Resmi Satuan Pendidikan</h3>
+          <div class="table-responsive">
+            <table class="table-info" id="table-identitas">
+              <!-- Rendered via JS -->
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BERITA SECTION -->
+    <section id="berita" class="sec sec-bg-alt">
+      <div class="container">
+        <div class="sec-header-row">
+          <div>
+            <span class="sec-badge">Kabar &amp; Warta</span>
+            <h2 class="sec-title">Berita &amp; Artikel Sekolah</h2>
+            <p class="sec-subtitle">Informasi seputar prestasi, acara, dan pengumuman kegiatan belajar mengajar.</p>
+          </div>
+          <div class="sec-search-wrap">
+            <input type="search" id="cari-berita" class="search-input" placeholder="Cari berita...">
+          </div>
+        </div>
+
+        <div class="grid-3" id="berita-grid">
+          <!-- Rendered via JS -->
+        </div>
+        <div class="empty-state hidden" id="berita-empty">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <p>Belum ada berita ditemukan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEGIATAN SECTION -->
+    <section id="kegiatan" class="sec">
+      <div class="container">
+        <div class="sec-header text-center">
+          <span class="sec-badge">Agenda Siswa</span>
+          <h2 class="sec-title">Kegiatan &amp; Ekstrakurikuler</h2>
+          <p class="sec-subtitle">Pengembangan bakat, minat, kedisiplinan dan spiritual siswa melalui program unggulan.</p>
+        </div>
+
+        <div class="grid-3" id="kegiatan-grid">
+          <!-- Rendered via JS -->
+        </div>
+        <div class="empty-state hidden" id="kegiatan-empty">
+          <p>Belum ada agenda kegiatan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGUMUMAN SECTION -->
+    <section id="pengumuman" class="sec sec-bg-alt">
+      <div class="container">
+        <div class="sec-header text-center">
+          <span class="sec-badge">Informasi Penting</span>
+          <h2 class="sec-title">Pengumuman Terkini</h2>
+          <p class="sec-subtitle">Pemberitahuan resmi bagi wali murid, peserta didik, dan civitas sekolah.</p>
+        </div>
+
+        <div class="announcement-list" id="pengumuman-list">
+          <!-- Rendered via JS -->
+        </div>
+        <div class="empty-state hidden" id="pengumuman-empty">
+          <p>Belum ada pengumuman baru.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI SECTION -->
+    <section id="galeri" class="sec">
+      <div class="container">
+        <div class="sec-header text-center">
+          <span class="sec-badge">Dokumentasi</span>
+          <h2 class="sec-title">Galeri Foto Sekolah</h2>
+          <p class="sec-subtitle">Momen kebersamaan, keceriaan belajar, dan aksi prestasi siswa SDN Kebotohan.</p>
+        </div>
+
+        <div class="grid-4" id="galeri-grid">
+          <!-- Rendered via JS -->
+        </div>
+        <div class="empty-state hidden" id="galeri-empty">
+          <p>Belum ada foto dokumentasi di galeri.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="sec sec-bg-alt">
+      <div class="container">
+        <div class="grid-2 gap-xl align-center">
+          <div>
+            <span class="sec-badge">Hubungi Kami</span>
+            <h2 class="sec-title">Pusat Layanan Informasi &amp; Aspirasi</h2>
+            <p class="sec-subtitle mb-lg">Kami siap melayani kebutuhan informasi seputar pendaftaran siswa baru (PPDB), akademik, dan administrasi sekolah.</p>
+
+            <div class="contact-card-box">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </div>
+                <div>
+                  <strong>Alamat Sekolah</strong>
+                  <p id="kontak-alamat">-</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </div>
+                <div>
+                  <strong>Telepon / WhatsApp</strong>
+                  <p id="kontak-telp">-</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </div>
+                <div>
+                  <strong>Email Resmi</strong>
+                  <p id="kontak-email">-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-elevated card-hours">
+            <h3 class="card-title mb-md">Jam Pelayanan Sekolah</h3>
+            <ul class="hours-list">
+              <li><span>Senin - Kamis</span><strong>07.00 - 13.30 WIB</strong></li>
+              <li><span>Jum'at</span><strong>07.00 - 11.00 WIB</strong></li>
+              <li><span>Sabtu</span><strong>07.00 - 12.30 WIB</strong></li>
+              <li><span>Minggu &amp; Libur Nasional</span><strong class="text-danger">Tutup</strong></li>
+            </ul>
+            <div class="callout-box mt-md">
+              <p>Untuk kunjungan dinas dan konsultasi wali murid, disarankan membuat janji temu terlebih dahulu melalui kontak resmi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <div class="brand brand-light">
+          <div class="logo-fallback logo-fallback-sm">SD</div>
+          <div>
+            <h3 class="footer-brand-name" id="ftr-nama">SDN KEBOTOHAN</h3>
+            <p class="footer-brand-sub" id="ftr-tagline">Unggul, Berkarakter &amp; Berprestasi</p>
+          </div>
+        </div>
+        <p class="footer-desc mt-sm" id="ftr-alamat">Desa Kebotohan, Kec. Kraton, Pasuruan</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Tautan Cepat</h4>
+        <ul class="footer-links">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#profil">Profil Sekolah</a></li>
+          <li><a href="#berita">Berita Terkini</a></li>
+          <li><a href="#kegiatan">Kegiatan Siswa</a></li>
+          <li><a href="#pengumuman">Pengumuman</a></li>
+          <li><a href="#galeri">Galeri Foto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Informasi Sekolah</h4>
+        <ul class="footer-info">
+          <li>NPSN: <span id="ftr-npsn">-</span></li>
+          <li>Akreditasi: <span id="ftr-akreditasi">-</span></li>
+          <li>Email: <span id="ftr-email">-</span></li>
+          <li>Telp: <span id="ftr-telp">-</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; 2026 <span id="ftr-copy-nama">SDN Kebotohan</span>. Seluruh Hak Cipta Dilindungi.</p>
+        <p class="credit">Portal Web Resmi Sekolah</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL BACA BERITA -->
+  <div id="modal-berita" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="modal-berita"></div>
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <h3 id="modal-berita-judul" class="modal-title">Judul Berita</h3>
+        <button class="btn-close" data-close="modal-berita" aria-label="Tutup">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-meta mb-md">
+          <span class="badge" id="modal-berita-kategori">Warta</span>
+          <span class="date" id="modal-berita-tgl">-</span>
+        </div>
+        <div id="modal-berita-img-wrap" class="modal-cover-wrap mb-md hidden">
+          <img id="modal-berita-img" src="" alt="Foto Berita" class="modal-cover">
+        </div>
+        <div id="modal-berita-isi" class="modal-prose"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close="modal-berita">Tutup</button>
       </div>
     </div>
   </div>
-  <nav class="nav">
-    <a href="#berita">Berita</a>
-    <a href="#kegiatan">Kegiatan</a>
-    <a href="#pengumuman">Pengumuman</a>
-    <a href="#galeri">Galeri</a>
-    <a href="#profil">Profil</a>
-    <a href="#admin" class="nav-admin">Admin</a>
-  </nav>
-</header>
 
-<main>
-  <section class="container">
-    <div class="card welcome">
-      <h2>Selamat Datang di Website SDN Kebotohan</h2>
-      <p>Portal resmi informasi pendidikan, kegiatan sekolah, dan pengumuman terkini bagi seluruh warga sekolah.</p>
-    </div>
-
-    <div class="grid-2">
-      <section id="berita" class="card">
-        <div class="card-head">
-          <h2>Berita Terbaru</h2>
-          <span class="card-tag">Update Otomatis</span>
-        </div>
-        <ul id="berita-list" class="list"></ul>
-      </section>
-
-      <section id="pengumuman" class="card">
-        <div class="card-head">
-          <h2>Pengumuman</h2>
-          <span class="card-tag highlight">Penting</span>
-        </div>
-        <ul id="pengumuman-list" class="list"></ul>
-      </section>
-    </div>
-
-    <section id="kegiatan" class="card">
-      <div class="card-head">
-        <h2>Kegiatan Sekolah</h2>
-        </div>
-      <div id="kegiatan-grid" class="grid-3"></div>
-    </section>
-
-    <section id="galeri" class="card">
-      <div class="card-head"><h2>Galeri</h2></div>
-      <div id="galeri-grid" class="grid-4"></div>
-    </section>
-
-    <section id="profil" class="card">
-      <div class="card-head"><h2>Profil Sekolah</h2></div>
-      <div class="profile-grid">
-        <div>
-          <h3>Visi</h3>
-          <p>"Terwujudnya Sekolah Dasar yang Berkualitas, Berkarakter, dan Berwawasan Nasional."</p>
-        </div>
-        <div>
-          <h3>Misi</h3>
-          <p>Menyelenggarkan pendidikan dasar yang terjangkau, bermutu, dan merata.</p>
-        </div>
-        <div>
-          <h3>Statistik</h3>
-          <ul>
-            <li>Siswa: 420</li>
-            <li>Guru: 28</li>
-            <li>Tenaga Kependidikan: 12</li>
-            <li>Rombel: 12</li>
-          </ul>
-        </div>
+  <!-- MODAL ZOOM GALERI -->
+  <div id="modal-galeri" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="modal-galeri"></div>
+    <div class="modal-dialog modal-dialog-lightbox">
+      <button class="btn-close-lightbox" data-close="modal-galeri" aria-label="Tutup">&times;</button>
+      <div class="lightbox-img-wrap">
+        <img id="modal-galeri-img" src="" alt="Galeri Full" class="lightbox-img">
       </div>
-    </section>
-  </section>
-</main>
-
-<footer class="footer">
-  <p>© 2026 SDN KEBOTOHAN · Dikelola oleh Tim IT Sekolah</p>
-</footer>
-
-<!-- Admin Panel -->
-<div id="admin-panel" class="admin-panel hidden">
-  <div class="admin-backdrop" onclick="closeAdmin()"></div>
-  <div class="admin-box">
-    <div class="admin-head">
-      <h2>Panel Admin</h2>
-      <div style="display:flex;gap:12px;align-items:center">
-        <button id="logout-btn" onclick="logoutAdmin()" style="display:none;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);color:#fff;padding:6px 12px;border-radius:7px;font-size:12px;cursor:pointer">Keluar</button>
-        <button class="close-btn" onclick="closeAdmin()">×</button>
-      </div>
+      <div class="lightbox-caption" id="modal-galeri-judul"></div>
     </div>
-    <div class="admin-tabs">
-      <button class="tab-active" data-tab="berita">Berita</button>
-      <button data-tab="kegiatan">Kegiatan</button>
-      <button data-tab="pengumuman">Pengumuman</button>
-      <button data-tab="galeri">Galeri</button>
-      <button data-tab="backup">Backup</button>
-    </div>
-    <div class="admin-content" id="admin-content"></div>
   </div>
-</div>
 
-<script src="app.js"></script>
+  <!-- ======================================================== -->
+  <!-- MODAL CMS ADMIN LENGKAP -->
+  <!-- ======================================================== -->
+  <div id="modal-admin" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="modal-admin"></div>
+    <div class="admin-window">
+      <!-- Admin Header -->
+      <div class="admin-window-header">
+        <div class="admin-brand">
+          <div class="admin-logo-dot"></div>
+          <div>
+            <h3>CMS Panel SDN Kebotohan</h3>
+            <span class="sub" id="admin-user-status">Mode Pengelola Konten</span>
+          </div>
+        </div>
+        <div class="admin-header-actions">
+          <button class="btn btn-sm btn-outline-white hidden" id="admin-btn-logout" onclick="adminLogout()">Keluar</button>
+          <button class="btn-close-admin" data-close="modal-admin" aria-label="Tutup Panel">&times;</button>
+        </div>
+      </div>
+
+      <!-- VIEW 1: LOGIN FORM -->
+      <div id="admin-view-login" class="admin-view-login">
+        <div class="login-card">
+          <div class="login-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          </div>
+          <h3>Masuk Dashboard Admin</h3>
+          <p class="text-muted">Gunakan kata sandi administrator untuk mengelola data dan informasi sekolah.</p>
+          <form id="form-login" onsubmit="handleLoginSubmit(event)" class="mt-md">
+            <div class="form-group text-left">
+              <label for="admin-password">Kata Sandi</label>
+              <input type="password" id="admin-password" class="form-control" placeholder="Masukkan kata sandi..." autocomplete="current-password" required>
+            </div>
+            <div id="login-error-msg" class="alert-error hidden"></div>
+            <button type="submit" class="btn btn-primary btn-block mt-md">Masuk ke CMS</button>
+            <div class="login-hint">
+              <span>Sandi bawaan: <code>admin123</code></span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- VIEW 2: DASHBOARD CMS -->
+      <div id="admin-view-dashboard" class="admin-view-dashboard hidden">
+        <!-- Sidebar Navigation -->
+        <aside class="admin-sidebar">
+          <nav class="admin-nav">
+            <button class="admin-nav-item active" data-tab="tab-identitas">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+              <span>Identitas &amp; Profil</span>
+            </button>
+            <button class="admin-nav-item" data-tab="tab-berita">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              <span>Kelola Berita</span>
+            </button>
+            <button class="admin-nav-item" data-tab="tab-kegiatan">
+              <svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2zm-7 5h5v5h-5z"/></svg>
+              <span>Kelola Kegiatan</span>
+            </button>
+            <button class="admin-nav-item" data-tab="tab-pengumuman">
+              <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+              <span>Pengumuman</span>
+            </button>
+            <button class="admin-nav-item" data-tab="tab-galeri">
+              <svg viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+              <span>Galeri Foto</span>
+            </button>
+            <button class="admin-nav-item" data-tab="tab-pengaturan">
+              <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+              <span>Pengaturan &amp; Backup</span>
+            </button>
+          </nav>
+        </aside>
+
+        <!-- Admin Tab Contents -->
+        <main class="admin-main">
+
+          <!-- TAB 1: IDENTITAS & PROFIL -->
+          <div id="tab-identitas" class="tab-pane active">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Identitas &amp; Profil Sekolah</h3>
+                <p class="text-muted">Ubah nama, kontak, logo, visi misi, statistik, dan kepala sekolah.</p>
+              </div>
+            </div>
+
+            <form id="form-identitas" onsubmit="saveIdentitas(event)">
+              <div class="admin-section-card">
+                <h4>Informasi Pokok</h4>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Nama Sekolah</label>
+                    <input type="text" id="cfg-nama" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Slogan / Tagline</label>
+                    <input type="text" id="cfg-tagline" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>NPSN</label>
+                    <input type="text" id="cfg-npsn" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Akreditasi</label>
+                    <input type="text" id="cfg-akreditasi" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>No. Telepon / WhatsApp</label>
+                    <input type="text" id="cfg-telp" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Email Resmi</label>
+                    <input type="email" id="cfg-email" class="form-control" required>
+                  </div>
+                </div>
+                <div class="form-group mt-sm">
+                  <label>Alamat Lengkap</label>
+                  <textarea id="cfg-alamat" class="form-control" rows="2" required></textarea>
+                </div>
+              </div>
+
+              <!-- Upload Logo & Foto Kepala Sekolah -->
+              <div class="admin-section-card">
+                <h4>Upload Logo &amp; Foto Pimpinan</h4>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Logo Sekolah</label>
+                    <div class="file-uploader-box">
+                      <div class="preview-box">
+                        <img id="preview-logo" src="" alt="Preview Logo" class="preview-img hidden">
+                        <span id="preview-logo-placeholder" class="text-muted text-sm">Belum ada logo</span>
+                      </div>
+                      <div class="upload-controls">
+                        <input type="file" id="input-file-logo" accept="image/*" class="form-file">
+                        <input type="url" id="input-url-logo" class="form-control mt-xs" placeholder="Atau tempel URL gambar...">
+                        <button type="button" class="btn btn-xs btn-outline-danger mt-xs" onclick="clearLogo()">Hapus Logo</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Foto Kepala Sekolah</label>
+                    <div class="file-uploader-box">
+                      <div class="preview-box">
+                        <img id="preview-ks" src="" alt="Preview KS" class="preview-img hidden">
+                        <span id="preview-ks-placeholder" class="text-muted text-sm">Belum ada foto</span>
+                      </div>
+                      <div class="upload-controls">
+                        <input type="file" id="input-file-ks" accept="image/*" class="form-file">
+                        <input type="url" id="input-url-ks" class="form-control mt-xs" placeholder="Atau tempel URL gambar...">
+                        <button type="button" class="btn btn-xs btn-outline-danger mt-xs" onclick="clearFotoKS()">Hapus Foto</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-grid-2 mt-md">
+                  <div class="form-group">
+                    <label>Nama Kepala Sekolah</label>
+                    <input type="text" id="cfg-ks-nama" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Kutipan Sambutan</label>
+                    <input type="text" id="cfg-ks-sambutan" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visi, Misi & Statistik -->
+              <div class="admin-section-card">
+                <h4>Visi &amp; Misi</h4>
+                <div class="form-group">
+                  <label>Visi</label>
+                  <textarea id="cfg-visi" class="form-control" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Misi (Satu butir misi per baris)</label>
+                  <textarea id="cfg-misi" class="form-control" rows="4" placeholder="Contoh:
+1. Melaksanakan pembelajaran aktif
+2. Menumbuhkan nilai budi pekerti" required></textarea>
+                </div>
+              </div>
+
+              <div class="admin-section-card">
+                <h4>Statistik Sekolah (Angka Cepat)</h4>
+                <div class="form-grid-4">
+                  <div class="form-group">
+                    <label>Jumlah Siswa</label>
+                    <input type="text" id="cfg-stat-siswa" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Jumlah Guru &amp; Staf</label>
+                    <input type="text" id="cfg-stat-guru" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Rombel / Kelas</label>
+                    <input type="text" id="cfg-stat-rombel" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Status Akreditasi</label>
+                    <input type="text" id="cfg-stat-akreditasi" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sticky-save-bar">
+                <button type="submit" class="btn btn-primary">Simpan Seluruh Profil</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- TAB 2: KELOLA BERITA -->
+          <div id="tab-berita" class="tab-pane">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Kelola Berita &amp; Artikel</h3>
+                <p class="text-muted">Buat, perbarui, dan hapus berita sekolah.</p>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFormBerita()">+ Tambah Berita</button>
+            </div>
+
+            <!-- Form Berita (Toggleable) -->
+            <div id="box-form-berita" class="admin-form-panel hidden">
+              <div class="panel-head">
+                <h4 id="form-berita-title">Tambah Berita Baru</h4>
+                <button type="button" class="btn-close-sm" onclick="closeFormBerita()">&times;</button>
+              </div>
+              <form id="form-item-berita" onsubmit="saveItemBerita(event)">
+                <input type="hidden" id="berita-edit-id">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Judul Berita</label>
+                    <input type="text" id="berita-in-judul" class="form-control" placeholder="Tulis judul..." required>
+                  </div>
+                  <div class="form-group">
+                    <label>Kategori</label>
+                    <input type="text" id="berita-in-kategori" class="form-control" placeholder="Contoh: Prestasi, Akademik, Pramuka" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Tanggal Rilis</label>
+                  <input type="text" id="berita-in-tgl" class="form-control" placeholder="Contoh: 16 Okt 2026" required>
+                </div>
+                <div class="form-group">
+                  <label>Foto Sampul (Upload File atau URL)</label>
+                  <div class="file-uploader-box">
+                    <div class="preview-box">
+                      <img id="preview-berita" src="" alt="Preview Berita" class="preview-img hidden">
+                      <span id="preview-berita-placeholder" class="text-muted text-sm">Tidak ada foto</span>
+                    </div>
+                    <div class="upload-controls">
+                      <input type="file" id="input-file-berita" accept="image/*" class="form-file">
+                      <input type="url" id="input-url-berita" class="form-control mt-xs" placeholder="Atau paste URL gambar...">
+                      <button type="button" class="btn btn-xs btn-outline-danger mt-xs" onclick="clearFotoBerita()">Hapus Foto</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Ringkasan Singkat</label>
+                  <textarea id="berita-in-ringkas" class="form-control" rows="2" placeholder="Muncul di kartu beranda..." required></textarea>
+                </div>
+                <div class="form-group">
+                  <label>Isi Lengkap Berita</label>
+                  <textarea id="berita-in-isi" class="form-control" rows="6" placeholder="Paragraf lengkap berita (tekan Enter untuk paragraf baru)..." required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Simpan Berita</button>
+                  <button type="button" class="btn btn-secondary" onclick="closeFormBerita()">Batal</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="table-responsive mt-md">
+              <table class="table-admin">
+                <thead>
+                  <tr>
+                    <th style="width:70px">Foto</th>
+                    <th>Judul &amp; Ringkasan</th>
+                    <th>Kategori</th>
+                    <th>Tanggal</th>
+                    <th style="width:130px; text-align:right">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="table-berita-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 3: KELOLA KEGIATAN -->
+          <div id="tab-kegiatan" class="tab-pane">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Kelola Kegiatan &amp; Agenda</h3>
+                <p class="text-muted">Jadwal ekstrakurikuler, perlombaan, dan agenda sekolah.</p>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFormKegiatan()">+ Tambah Kegiatan</button>
+            </div>
+
+            <!-- Form Kegiatan -->
+            <div id="box-form-kegiatan" class="admin-form-panel hidden">
+              <div class="panel-head">
+                <h4 id="form-kegiatan-title">Tambah Kegiatan Baru</h4>
+                <button type="button" class="btn-close-sm" onclick="closeFormKegiatan()">&times;</button>
+              </div>
+              <form id="form-item-kegiatan" onsubmit="saveItemKegiatan(event)">
+                <input type="hidden" id="kegiatan-edit-id">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Nama Kegiatan</label>
+                    <input type="text" id="kegiatan-in-judul" class="form-control" placeholder="Contoh: Ekstrakurikuler Pramuka" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Jadwal / Waktu</label>
+                    <input type="text" id="kegiatan-in-jadwal" class="form-control" placeholder="Contoh: Setiap Rabu, 15.00 WIB" required>
+                  </div>
+                </div>
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Lokasi / Ruang</label>
+                    <input type="text" id="kegiatan-in-lokasi" class="form-control" placeholder="Contoh: Lapangan Utama Sekolah">
+                  </div>
+                  <div class="form-group">
+                    <label>Warna Aksen Kartu</label>
+                    <input type="color" id="kegiatan-in-warna" class="form-control form-control-color" value="#1a56db">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Deskripsi Kegiatan</label>
+                  <textarea id="kegiatan-in-desk" class="form-control" rows="3" placeholder="Uraian kegiatan..." required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Simpan Kegiatan</button>
+                  <button type="button" class="btn btn-secondary" onclick="closeFormKegiatan()">Batal</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="table-responsive mt-md">
+              <table class="table-admin">
+                <thead>
+                  <tr>
+                    <th>Kegiatan</th>
+                    <th>Jadwal</th>
+                    <th>Lokasi</th>
+                    <th style="width:130px; text-align:right">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="table-kegiatan-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 4: KELOLA PENGUMUMAN -->
+          <div id="tab-pengumuman" class="tab-pane">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Kelola Pengumuman</h3>
+                <p class="text-muted">Pemberitahuan penting bagi siswa, guru, dan wali murid.</p>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFormPengumuman()">+ Tambah Pengumuman</button>
+            </div>
+
+            <!-- Form Pengumuman -->
+            <div id="box-form-pengumuman" class="admin-form-panel hidden">
+              <div class="panel-head">
+                <h4 id="form-pengumuman-title">Tambah Pengumuman</h4>
+                <button type="button" class="btn-close-sm" onclick="closeFormPengumuman()">&times;</button>
+              </div>
+              <form id="form-item-pengumuman" onsubmit="saveItemPengumuman(event)">
+                <input type="hidden" id="pengumuman-edit-id">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Judul Pengumuman</label>
+                    <input type="text" id="pengumuman-in-judul" class="form-control" placeholder="Contoh: Jadwal Libur Semester" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Tingkat / Badge</label>
+                    <select id="pengumuman-in-level" class="form-control">
+                      <option value="Penting">Penting</option>
+                      <option value="Informasi">Informasi</option>
+                      <option value="PPDB">PPDB</option>
+                      <option value="Darurat">Darurat</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Tanggal Dikeluarkan</label>
+                  <input type="text" id="pengumuman-in-tgl" class="form-control" placeholder="Contoh: 16 Okt 2026" required>
+                </div>
+                <div class="form-group">
+                  <label>Isi Pengumuman</label>
+                  <textarea id="pengumuman-in-desk" class="form-control" rows="4" placeholder="Detail pengumuman..." required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Simpan Pengumuman</button>
+                  <button type="button" class="btn btn-secondary" onclick="closeFormPengumuman()">Batal</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="table-responsive mt-md">
+              <table class="table-admin">
+                <thead>
+                  <tr>
+                    <th>Status</th>
+                    <th>Judul &amp; Isi</th>
+                    <th>Tanggal</th>
+                    <th style="width:130px; text-align:right">Aksi</th>
+                  </tr>
+                </thead>
+                <tbody id="table-pengumuman-body">
+                  <!-- Rendered via JS -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- TAB 5: KELOLA GALERI -->
+          <div id="tab-galeri" class="tab-pane">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Kelola Galeri Foto</h3>
+                <p class="text-muted">Upload foto dokumentasi kegiatan sekolah.</p>
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="openFormGaleri()">+ Upload Foto</button>
+            </div>
+
+            <!-- Form Galeri -->
+            <div id="box-form-galeri" class="admin-form-panel hidden">
+              <div class="panel-head">
+                <h4 id="form-galeri-title">Upload Foto Galeri</h4>
+                <button type="button" class="btn-close-sm" onclick="closeFormGaleri()">&times;</button>
+              </div>
+              <form id="form-item-galeri" onsubmit="saveItemGaleri(event)">
+                <input type="hidden" id="galeri-edit-id">
+                <div class="form-grid-2">
+                  <div class="form-group">
+                    <label>Judul / Momen Foto</label>
+                    <input type="text" id="galeri-in-judul" class="form-control" placeholder="Contoh: Upacara Bendera HUT RI" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Kategori</label>
+                    <input type="text" id="galeri-in-kategori" class="form-control" placeholder="Contoh: Upacara, Ekstrakurikuler, Lomba" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Pilih File Foto (atau tempel URL)</label>
+                  <div class="file-uploader-box">
+                    <div class="preview-box">
+                      <img id="preview-galeri" src="" alt="Preview Galeri" class="preview-img hidden">
+                      <span id="preview-galeri-placeholder" class="text-muted text-sm">Wajib pilih foto</span>
+                    </div>
+                    <div class="upload-controls">
+                      <input type="file" id="input-file-galeri" accept="image/*" class="form-file">
+                      <input type="url" id="input-url-galeri" class="form-control mt-xs" placeholder="Atau tempel URL gambar...">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary">Simpan Foto</button>
+                  <button type="button" class="btn btn-secondary" onclick="closeFormGaleri()">Batal</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="admin-gallery-grid" id="admin-gallery-grid">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- TAB 6: PENGATURAN & BACKUP -->
+          <div id="tab-pengaturan" class="tab-pane">
+            <div class="tab-pane-header">
+              <div>
+                <h3>Pengaturan Sistem &amp; Cadangan Data</h3>
+                <p class="text-muted">Kelola kata sandi administrator dan backup data situs.</p>
+              </div>
+            </div>
+
+            <!-- Ganti Password -->
+            <div class="admin-section-card">
+              <h4>Ubah Kata Sandi Admin</h4>
+              <form onsubmit="handleGantiSandi(event)" class="mt-sm">
+                <div class="form-grid-3">
+                  <div class="form-group">
+                    <label>Kata Sandi Lama</label>
+                    <input type="password" id="pass-lama" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Kata Sandi Baru</label>
+                    <input type="password" id="pass-baru" class="form-control" minlength="4" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Ulangi Kata Sandi Baru</label>
+                    <input type="password" id="pass-konfirm" class="form-control" minlength="4" required>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm mt-sm">Perbarui Kata Sandi</button>
+              </form>
+            </div>
+
+            <!-- Backup & Restore JSON -->
+            <div class="admin-section-card">
+              <h4>Cadangkan &amp; Pulihkan Data (Backup &amp; Restore)</h4>
+              <p class="text-sm text-muted mb-md">Karena situs statis menyimpan data di memori peramban (localStorage), Anda dapat mengekspor seluruh konten ke file JSON dan mengimpornya kembali di perangkat mana saja.</p>
+
+              <div class="backup-actions">
+                <button type="button" class="btn btn-outline-primary" onclick="exportDataJSON()">
+                  <svg viewBox="0 0 24 24" class="ico"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                  <span>Unduh Cadangan (Backup JSON)</span>
+                </button>
+
+                <div class="restore-wrap">
+                  <label class="btn btn-outline-secondary">
+                    <svg viewBox="0 0 24 24" class="ico"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/></svg>
+                    <span>Impor Data (Restore JSON)</span>
+                    <input type="file" id="file-restore-json" accept=".json" onchange="importDataJSON(event)" style="display:none">
+                  </label>
+                </div>
+
+                <button type="button" class="btn btn-outline-danger" onclick="resetDefaultData()">
+                  <span>Reset ke Data Asli Pabrik</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFIKASI -->
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
